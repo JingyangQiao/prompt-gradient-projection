@@ -3,7 +3,9 @@
 Official Pytorch implementation for "**Prompt Gradient Projection for Continual Learning**", **ICLR 2024 (Spotlight)**. 
 
 ~~**Code will come soon!**~~
+
 L2P-PGP is published in 2/27/2024
+
 DualPrompt-PGP and CLIP-PGP will be published in 3/2024
 
 ## Abstract 
