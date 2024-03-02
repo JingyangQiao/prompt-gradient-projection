@@ -21,7 +21,6 @@ import torch
 
 import numpy as np
 import matplotlib.pyplot as plt
-from sklearn import manifold
 from sklearn.decomposition import PCA
 
 from timm.utils import accuracy
@@ -29,9 +28,6 @@ from timm.optim import create_optimizer
 
 import utils
 import memory
-
-import psutil
-from memory_profiler import profile
 
 
 def train_one_epoch(model: torch.nn.Module, original_model: torch.nn.Module, 
