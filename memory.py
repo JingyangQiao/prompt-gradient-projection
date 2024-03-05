@@ -18,18 +18,20 @@ def get_representation_matrix(data_loader, device):
 def get_rep(model, original_model, mem_example, task_id):
     rep = []
     rep_key = []
-    for bs_ in range(32):
-        # Prompt Representation Matrix
-        _ = model(mem_example[bs_ * 24:(bs_ + 1) * 24, ...], task_id=task_id, train=False)
-        rep_ = model.act["rep"].reshape(-1, 196 * 768)
-        rep.append(rep_)
-        del _, rep_
+    with torch.no_grad():
+        for bs_ in range(32):
+            # Prompt Representation Matrix
+            _ = model(mem_example[bs_ * 24:(bs_ + 1) * 24, ...], task_id=task_id, train=False)
+            rep_ = model.act["rep"].reshape(-1, 196 * 768)
+            rep.append(rep_)
+            del _, rep_
 
-        # Key Representation Matrix
-        key_ = original_model(mem_example[bs_ * 24:(bs_ + 1) * 24, ...], train=False)
-        rep_key_ = key_["pre_logits"]
-        rep_key.append(rep_key_)
-        del key_, rep_key_
+            # Key Representation Matrix
+            key_ = original_model(mem_example[bs_ * 24:(bs_ + 1) * 24, ...], train=False)
+            rep_key_ = key_["pre_logits"]
+            rep_key.append(rep_key_)
+            del key_, rep_key_
+    torch.cuda.empty_cache()
 
     return rep, rep_key
 
