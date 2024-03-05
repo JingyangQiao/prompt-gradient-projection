@@ -203,19 +203,6 @@ def train_and_evaluate(model: torch.nn.Module, model_without_ddp: torch.nn.Modul
             model.eval()
             original_model.eval()
             mem_example = memory.get_representation_matrix(data_loader[task_id]['mem'], device)
-            # rep = []
-            # rep_key = []
-            # for bs_ in range(32):
-            #     # Prompt Representation Matrix
-            #     _ = model(mem_example[bs_ * 24:(bs_ + 1) * 24, ...], task_id=task_id, train=False)
-            #     rep_ = model.act["rep"].reshape(-1, 196 * 768)
-            #     rep.append(rep_)
-            #
-            #     # Key Representation Matrix
-            #     key_ = original_model(mem_example[bs_ * 24:(bs_ + 1) * 24, ...], train=False)
-            #     rep_key_ = key_["pre_logits"]
-            #     rep_key.append(rep_key_)
-
             rep, rep_key = memory.get_rep(model, original_model, mem_example, task_id)
 
             rep = torch.cat(rep)
