@@ -52,7 +52,7 @@ python main.py 20cifar100_l2p_pgp --model vit_base_patch16_224 --output_dir ./ou
 10-Split-ImageNet-R
 
 ```
-python main.py imr_l2p_pgp --model vit_base_patch16_224 --output_dir ./output --epochs 5
+python main.py imr_l2p_pgp --model vit_base_patch16_224 --output_dir ./output --epochs 50
 ```
 
 10-Split-TinyImageNet
@@ -65,26 +65,6 @@ python main.py tinyimagenet_l2p_pgp --model vit_base_patch16_224 --output_dir ./
 
 ```
 python main.py cub200_l2p_pgp --model vit_base_patch16_224 --output_dir ./output --epochs 5
-```
-
-**For OIL (Online Incremental Learning) settings:**
-
-For 10-Split-CIFAR100
-
-```
-python main.py 10cifar100_l2p_pgp --model vit_base_patch16_224 --output_dir ./output --epochs 1
-```
-
-For 20-Split-CIFAR100
-
-```
-python main.py 20cifar100_l2p_pgp --model vit_base_patch16_224 --output_dir ./output --epochs 1 --seed 42
-```
-
-For 10-Split-TinyImageNet
-
-```
-python main.py tinyimagenet_l2p_pgp --model vit_base_patch16_224 --output_dir ./output --epochs 1 --seed 50
 ```
 
 **We also keep the original L2P method in our codebase and command line is like:**
@@ -104,19 +84,19 @@ python main.py 20cifar100_l2p_pgp --model vit_base_patch16_224 --output_dir ./ou
 10-Split-ImageNet-R
 
 ```
-python main.py imr_l2p_pgp --model vit_base_patch16_224 --output_dir ./output --epochs 5 --pgp False --no_pgp
+python main.py imr_l2p_pgp --model vit_base_patch16_224 --output_dir ./output --epochs 50 --no_pgp
 ```
 
 10-Split-TinyImageNet
 
 ```
-python main.py tinyimagenet_l2p_pgp --model vit_base_patch16_224 --output_dir ./output --epochs 5 --pgp False --no_pgp
+python main.py tinyimagenet_l2p_pgp --model vit_base_patch16_224 --output_dir ./output --epochs 5 --no_pgp
 ```
 
 5-Split-CUB200
 
 ```
-python main.py cub200_l2p_pgp --model vit_base_patch16_224 --output_dir ./output --epochs 5 --pgp False --no_pgp
+python main.py cub200_l2p_pgp --model vit_base_patch16_224 --output_dir ./output --epochs 5 --no_pgp
 ```
 
 ## Evaluation
