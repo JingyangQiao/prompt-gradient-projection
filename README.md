@@ -12,7 +12,7 @@ DualPrompt-PGP is published in 3/10/2024
 
 CLIP-PGP will be published in 3/2024
 
-###########################################################################################################
+#######################################################################################
 
 ### Our project page now is available at (https://jingyangqiao.github.io/)
 
@@ -22,7 +22,7 @@ We will validate our work on more incremental settings, e.g. CIL, TIL, DIL, OIL 
 
 Detailed information please kindly refer to the above website.
 
-###########################################################################################################
+#######################################################################################
 
 ## Abstract 
 
