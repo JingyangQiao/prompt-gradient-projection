@@ -12,6 +12,15 @@ DualPrompt-PGP is published in 3/10/2024
 
 CLIP-PGP will be published in 3/2024
 
+############################################################################################################################
+
+# Our project page now is available at (https://jingyangqiao.github.io/)
+Recently, based on prompt gradient projection method, we have proposed an unified work about how to resist forgetting by gradient projection in various efficient-parameter include **prompt, prefix, adapter, LoRA** with **ViT, CLIP, BLIP** backbones.
+We will validate our work on more incremental settings, e.g. CIL, TIL, DIL, OIL and IIL (Incremental Instruction Tuning) in the future.
+Detailed information please kindly refer to the above website.
+
+############################################################################################################################
+
 ## Abstract 
 
 Prompt-tuning has demonstrated impressive performance in continual learning by querying relevant prompts for each input instance, which can avoid the introduction of task identifier. Its forgetting is therefore reduced as this instance-wise query mechanism enables us to select and update only relevant prompts. In this paper, we further integrate prompt-tuning with gradient projection approach. Our observation is: prompt-tuning releases the necessity of task identifier for gradient projection method; and gradient projection provides theoretical guarantees against forgetting for prompt-tuning. This inspires a new **p**rompt **g**radient **p**rojection approach (PGP) for continual learning. In PGP, we deduce that reaching the orthogonal condition for prompt gradient can effectively prevent forgetting via the self attention mechanism in vision-transformer. The condition equations are then realized by conducting Singular Value Decomposition (SVD) on an element-wise sum space between input space and prompt space. We validate our method on diverse datasets and experiments demonstrate the efficiency of reducing forgetting both in class incremental, online class incremental, and task incremental settings.
