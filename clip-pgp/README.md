@@ -43,7 +43,7 @@ python main.py --config configs/split_cifar100.json
 
 ## Thanks
 
-The baseline code is from (https://github.com/JH-LEE-KR/l2p-pytorch)
+The baseline code is from (https://github.com/iamwangyabin/s-prompts)
 
 
 ## License
