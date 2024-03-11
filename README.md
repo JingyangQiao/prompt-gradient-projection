@@ -10,8 +10,9 @@ L2P-PGP is published in 2/27/2024
 
 DualPrompt-PGP is published in 3/10/2024
 
-CLIP-PGP will be published in 3/2024
+~~CLIP-PGP will be published in 3/2024~~
 
+CLIP-PGP is published in 3/11/2024
 #######################################################################################
 
 ### Our project page now is available at (https://jingyangqiao.github.io/)
