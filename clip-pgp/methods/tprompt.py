@@ -93,10 +93,11 @@ class TPrompts(BaseLearner):
         self._network.eval()
         mem_example, mem_tasks = memory.get_representation_matrix(train_loader, self._device)
         rep = []
-        for bs_ in range(24):
-            rep_ = self._network.query(mem_example[bs_ * 32:(bs_ + 1) * 32, ...], mem_tasks[bs_ * 32:(bs_ + 1) * 32])
-            rep_ = rep_.reshape(32, -1)
-            rep.append(rep_)
+        with torch.no_grad():
+            for bs_ in range(24):
+                rep_ = self._network.query(mem_example[bs_ * 32:(bs_ + 1) * 32, ...], mem_tasks[bs_ * 32:(bs_ + 1) * 32])
+                rep_ = rep_.reshape(32, -1)
+                rep.append(rep_)
         rep = torch.cat(rep)
         rep = rep.detach().cpu().numpy()
         pca = PCA(n_components=5)
