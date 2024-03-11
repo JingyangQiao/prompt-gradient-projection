@@ -12,14 +12,17 @@ DualPrompt-PGP is published in 3/10/2024
 
 CLIP-PGP will be published in 3/2024
 
-############################################################################################################################
+###########################################################################################################
 
-# Our project page now is available at (https://jingyangqiao.github.io/)
+### Our project page now is available at (https://jingyangqiao.github.io/)
+
 Recently, based on prompt gradient projection method, we have proposed an unified work about how to resist forgetting by gradient projection in various efficient-parameter include **prompt, prefix, adapter, LoRA** with **ViT, CLIP, BLIP** backbones.
+
 We will validate our work on more incremental settings, e.g. CIL, TIL, DIL, OIL and IIL (Incremental Instruction Tuning) in the future.
+
 Detailed information please kindly refer to the above website.
 
-############################################################################################################################
+###########################################################################################################
 
 ## Abstract 
 
