@@ -109,7 +109,7 @@ This repository is released under the Apache 2.0 license as found in the [LICENS
 ```
 @inproceedings{qiao2024PGP,
   title={Prompt Gradient Projection for Continual Learning},
-  author={Jingyang Qiao & Zhizhong Zhang, Xin Tan, Chengwei Chen, Yanyun Qu, Yong Peng, Yuan Xie},
+  author={Jingyang Qiao, Zhizhong Zhang, Xin Tan, Chengwei Chen, Yanyun Qu, Yong Peng, Yuan Xie},
   booktitle={International Conference on Learning Representations},
   year={2024}
 }
