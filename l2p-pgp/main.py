@@ -6,8 +6,7 @@
 # Added code for l2p implementation
 # -- Jaeho Lee, dlwogh9344@khu.ac.kr
 # ------------------------------------------
-# import os
-# os.environ['CUDA_VISIBLE_DEVICES'] = '1'
+
 import sys
 import argparse
 import datetime
