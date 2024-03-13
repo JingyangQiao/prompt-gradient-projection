@@ -99,7 +99,7 @@ def get_args_parser(subparsers):
     subparsers.add_argument('--mask_first_epoch', default=False, type=bool)
     subparsers.add_argument('--shared_prompt_pool', default=True, type=bool)
     subparsers.add_argument('--shared_prompt_key', default=False, type=bool)
-    subparsers.add_argument('--batchwise_prompt', default=False, type=bool)
+    subparsers.add_argument('--batchwise_prompt', default=True, type=bool)
     subparsers.add_argument('--embedding_key', default='cls', type=str)
     subparsers.add_argument('--predefined_key', default='', type=str)
     subparsers.add_argument('--pull_constraint', default=True)
