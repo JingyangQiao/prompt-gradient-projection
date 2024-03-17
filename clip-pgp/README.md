@@ -29,7 +29,7 @@ To train a model via command line:
 
 Change `"mode": "CIL"` in ```configs/cifar100_split.json``` file.
 ```
-python main.py --config configs/split_cifar100.json
+python main.py --config configs/cifar100_split.json
 ```
 
 **For TIL (Task Incremental Learning) settings:**
@@ -38,7 +38,7 @@ python main.py --config configs/split_cifar100.json
 
 Change `"mode": "TIL"` in ```configs/cifar100_split.json``` file.
 ```
-python main.py --config configs/split_cifar100.json
+python main.py --config configs/cifar100_split.json
 ```
 
 ## Thanks
