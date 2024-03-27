@@ -25,7 +25,7 @@ def get_prefix_matrix(data_loader, model, device):
                 representation_e[layer]["key"].append(model.e_prefix_feature[layer]["key"])
             count += 1
 
-            if count > 768:  # 选取sample的数量
+            if count > 768:
                 for layer in representation_g:
                     for item in representation_g[layer]:
                         representation_g[layer][item] = torch.cat(representation_g[layer][item])
