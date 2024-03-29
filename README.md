@@ -1,6 +1,7 @@
 # prompt-gradient-projection
 
-Official Pytorch implementation for "**Prompt Gradient Projection for Continual Learning**", **ICLR 2024 (Spotlight)**. 
+Official Pytorch implementation for "**Prompt Gradient Projection for Continual Learning**", **ICLR 2024 (Spotlight)**.
+
 #######################################################################################
 
 ### Our project page now is available at (https://jingyangqiao.github.io/)
@@ -24,7 +25,6 @@ DualPrompt-PGP is published in 3/10/2024
 ~~CLIP-PGP will be published in 3/2024~~
 
 CLIP-PGP is published in 3/11/2024
-#######################################################################################
 
 ## Abstract 
 
