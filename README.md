@@ -3,12 +3,15 @@
 Official Pytorch implementation for "**Prompt Gradient Projection for Continual Learning**", **ICLR 2024 (Spotlight)**.
 
 #######################################################################################
+### Our novel project page about continual instruction tuning now is available at (https://jingyangqiao.github.io/)
 
-### Our project page now is available at (https://jingyangqiao.github.io/)
+based on the Exponential Moving Average (EMA) method, we have proposed work about how to resist forgetting in various efficient-parameter include **prompt, prefix, LoRA** with **LLaVA-1.5** backbone.
 
-Recently, based on prompt gradient projection method, we have proposed an unified work about how to resist forgetting by gradient projection in various efficient-parameter include **prompt, prefix, adapter, LoRA** with **ViT, CLIP, BLIP** backbones.
+### Our project page about unified continual image classification framework now is available at (https://dmcv-ecnu-pegp.github.io/)
 
-We will validate our work on more incremental settings, e.g. CIL, TIL, DIL, OIL and IIL (Incremental Instruction Tuning) in the future.
+Recently, based on prompt gradient projection method, we have proposed an unified work about how to resist forgetting by gradient projection in various efficient-parameter include **prompt, prefix, adapter, LoRA** with **ViT, CLIP** backbones.
+
+We have validated our work on more incremental settings, e.g. CIL, TIL, DIL, OIL.
 
 Detailed information please kindly refer to the above website.
 
